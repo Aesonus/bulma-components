@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HeroModule } from 'projects/bulma-components-library/src/lib/hero/hero.module';
 import { NavbarModule } from 'projects/bulma-components-library/src/public-api';
 
 import { AppComponent } from './app.component';
@@ -10,7 +11,8 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    NavbarModule
+    NavbarModule,
+    HeroModule
   ],
   providers: [],
   bootstrap: [AppComponent]
