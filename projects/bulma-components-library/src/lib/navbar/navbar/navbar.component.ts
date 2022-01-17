@@ -9,8 +9,17 @@ export class NavbarComponent implements OnInit {
 
   constructor(private navElement: ElementRef) { }
 
+  get thisElement() {
+    return (this.navElement.nativeElement as Element)
+  }
+
   ngOnInit(): void {
-    (this.navElement.nativeElement as Element).classList.add("navbar")
+    this.thisElement.classList.add("navbar")
+  }
+
+  toggleMenu(burger: any, target: Element): void {
+    target.classList.toggle("is-active")
+    burger.classList.toggle("is-active")
   }
 
 }

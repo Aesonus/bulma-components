@@ -4,5 +4,18 @@
     </navbar-brand>
     <navbar-start>
         <a navbar-item>Link 1</a>
+        <a navbar-item>Link 2</a>
+        <a navbar-item>Link 3</a>
+        <a navbar-item>Link 4</a>
     </navbar-start>
+    <navbar-end>
+        <div navbar-dropdown is-right>
+            Welcome User!
+            <ng-container menu>
+                <a navbar-item>Account Settings</a>
+                <navbar-divider></navbar-divider>
+                <a navbar-item>Logout</a>
+            </ng-container>
+        </div>
+    </navbar-end>
 </nav>

@@ -1,12 +1,12 @@
 <div class="navbar-brand">
     <ng-content select="navbar-brand"></ng-content>
-    <a role="button" class="navbar-burger">
+    <a #burger role="button" class="navbar-burger" (click)="toggleMenu(burger, menu)">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
     </a>
 </div>
-<div class="navbar-menu">
+<div class="navbar-menu" #menu>
     <div class="navbar-start">
         <ng-content select="navbar-start">
         </ng-content>

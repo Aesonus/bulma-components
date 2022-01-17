@@ -1,0 +1,6 @@
+<a class='navbar-link' (click)="toggleDropdown()">
+    <ng-content></ng-content>
+</a>
+<div class="navbar-dropdown" [class.is-right]="isRight">
+    <ng-content select="[menu]"></ng-content>
+</div>

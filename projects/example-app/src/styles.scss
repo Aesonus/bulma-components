@@ -1,2 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 @import './../../../node_modules/bulma/bulma.sass';
+@media screen and (max-width: 1024px) {
+    .navbar-item {
+        &.has-dropdown {
+          .navbar-dropdown {
+            display: none;
+          }
+          &.is-active {
+            .navbar-dropdown {
+              display: block;
+            }
+          }
+       }
+    }
+}

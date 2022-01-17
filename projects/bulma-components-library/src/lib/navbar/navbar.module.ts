@@ -4,6 +4,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { NavbarItemComponent } from './navbar-item/navbar-item.component';
 import { NavbarBrandComponent } from './navbar-brand/navbar-brand.component';
 import { NavbarStartComponent } from './navbar-start/navbar-start.component';
+import { NavbarEndComponent } from './navbar-end/navbar-end.component';
+import { NavbarDropdownComponent } from './navbar-dropdown/navbar-dropdown.component';
+import { NavbarDividerComponent } from './navbar-divider/navbar-divider.component';
 
 
 
@@ -12,7 +15,10 @@ import { NavbarStartComponent } from './navbar-start/navbar-start.component';
     NavbarComponent,
     NavbarItemComponent,
     NavbarBrandComponent,
-    NavbarStartComponent
+    NavbarStartComponent,
+    NavbarEndComponent,
+    NavbarDropdownComponent,
+    NavbarDividerComponent
   ],
   imports: [
     CommonModule
@@ -21,7 +27,10 @@ import { NavbarStartComponent } from './navbar-start/navbar-start.component';
     NavbarComponent,
     NavbarItemComponent,
     NavbarBrandComponent,
-    NavbarStartComponent
+    NavbarStartComponent,
+    NavbarEndComponent,
+    NavbarDropdownComponent,
+    NavbarDividerComponent
   ]
 })
 export class NavbarModule { }
